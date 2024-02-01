@@ -1,5 +1,6 @@
 # Prerequisites
 *.d
+*.pdf
 
 # Object files
 *.o
@@ -18,7 +19,6 @@
 
 # Libraries
 *.lib
-*.a
 *.la
 *.lo
 
