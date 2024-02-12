@@ -24,4 +24,4 @@ fclean:	clean
 re:	fclean all
 
 tests:	fclean $(NAME)
-	@./tests/make ft_unitytest
+	@make -C ./tests/Makefile ft_unitytest
