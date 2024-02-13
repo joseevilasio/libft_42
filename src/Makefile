@@ -22,6 +22,3 @@ fclean:	clean
 	@find ./ -name '$(NAME)' -exec rm -f {} \;	
 
 re:	fclean all
-
-tests:	fclean $(NAME)
-	@make -C ./tests/Makefile ft_unitytest
