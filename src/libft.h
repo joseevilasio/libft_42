@@ -6,7 +6,7 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 20:05:10 by josejunior        #+#    #+#             */
-/*   Updated: 2024/02/14 17:43:04 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/02/14 18:56:49 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,14 @@ int	ft_isalnum(int c);
 function return non-zero if
 c is a is a 7-bit US-ASCII character; otherwise, they shall return 0.*/
 int	ft_isascii(int c);
+/*Checks c is a printable character.
+ -- Return:
+function return non-zero if
+c is a printable character character; otherwise, they shall return 0.*/
+int	ft_isprint(int c);
+/*check the size string.
+ -- Return:
+integer with length string .*/
+int	ft_strlen(char *str);
 
 #endif //TESTS_H
