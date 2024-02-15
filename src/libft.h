@@ -6,7 +6,7 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 20:05:10 by josejunior        #+#    #+#             */
-/*   Updated: 2024/02/15 18:27:20 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/02/15 18:55:23 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,6 @@ int		ft_isprint(int c);
 integer with length string .*/
 int		ft_strlen(char *str);
 void	*ft_memset(void *ptr, int c, unsigned int n);
+void	ft_bzero(void *ptr, unsigned int n);
 
 #endif //TESTS_H
