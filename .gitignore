@@ -54,3 +54,6 @@ dkms.conf
 
 # Gtest
 /build
+
+#Ide
+.vscode
