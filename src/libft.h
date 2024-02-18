@@ -6,7 +6,7 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 20:05:10 by josejunior        #+#    #+#             */
-/*   Updated: 2024/02/16 19:45:14 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/02/18 14:13:52 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,5 +53,8 @@ int				ft_strncmp(char *s1, char *s2, unsigned int n);
 int				ft_atoi(char *str);
 char			*ft_strdup(char *src);
 char			*ft_strnstr(char *str, char *to_find, unsigned int len);
+int				ft_toupper(int c);
+int				ft_tolower(int c);
+void			*ft_memcpy(char *dest, char *src, unsigned int n);
 
 #endif //TESTS_H
