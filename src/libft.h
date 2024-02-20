@@ -6,7 +6,7 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 20:05:10 by josejunior        #+#    #+#             */
-/*   Updated: 2024/02/20 19:59:45 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/02/20 20:23:16 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ void			*ft_memcpy(void *dest, const void *src, unsigned int n);
 void			*ft_memmove(void *dest, const void *src, unsigned int n);
 char			*ft_strchr(char *s, int c);
 char			*ft_strrchr(char *s, int c);
-void			*ft_memchr(char *s, int c, unsigned int n);
+void			*ft_memchr(const char *s, int c, unsigned int n);
 int				ft_memcmp(const void *s1, const void *s2, unsigned int n);
 
 #endif //LIBFT_H
