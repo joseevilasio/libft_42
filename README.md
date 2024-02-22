@@ -19,7 +19,7 @@
 | ft_strchr | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_strrchr | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_strncmp | ✅ | ✅ | ✅ | ✅ | ⛔️ |
-| ft_memchr | ✅ | ✅ | ⛔️ | ✅ | ⛔️ |
+| ft_memchr | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_memcmp | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_strnstr | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_atoi | ✅ | ✅ | ✅ | ✅ | ⛔️ |
@@ -30,7 +30,7 @@
 | Function | Status | Norminette | Francinette | My own test - Gtest | Moulinette
 | --- | --- | --- | --- |--- | --- |
 | ft_substr | ✅ | ✅ | ✅ | ✅ | ⛔️ |
-| ft_strjoin | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
+| ft_strjoin | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_strtrim | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | ft_split | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | ft_itoa | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
