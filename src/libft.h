@@ -6,7 +6,7 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 20:05:10 by josejunior        #+#    #+#             */
-/*   Updated: 2024/02/20 20:23:16 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/02/20 21:10:45 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,5 +61,6 @@ char			*ft_strchr(char *s, int c);
 char			*ft_strrchr(char *s, int c);
 void			*ft_memchr(const char *s, int c, unsigned int n);
 int				ft_memcmp(const void *s1, const void *s2, unsigned int n);
+void			*ft_calloc(unsigned int nelem, unsigned int size);
 
 #endif //LIBFT_H
