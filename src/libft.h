@@ -6,7 +6,7 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 20:05:10 by josejunior        #+#    #+#             */
-/*   Updated: 2024/02/20 21:10:45 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/02/22 18:22:39 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,8 @@ char			*ft_strrchr(char *s, int c);
 void			*ft_memchr(const char *s, int c, unsigned int n);
 int				ft_memcmp(const void *s1, const void *s2, unsigned int n);
 void			*ft_calloc(unsigned int nelem, unsigned int size);
+/* Allocates (with malloc(3)) and returns a substring from the string ’s’.
+The substring begins at index ’start’ and is of maximum size ’len’ */
+char			*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif //LIBFT_H

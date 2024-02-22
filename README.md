@@ -29,7 +29,7 @@
 ## Libft Part 2 Status
 | Function | Status | Norminette | Francinette | My own test - Gtest | Moulinette
 | --- | --- | --- | --- |--- | --- |
-| ft_substr | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
+| ft_substr | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_strjoin | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | ft_strtrim | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | ft_split | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
