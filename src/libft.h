@@ -6,7 +6,7 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 20:05:10 by josejunior        #+#    #+#             */
-/*   Updated: 2024/02/22 23:15:23 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/02/27 19:29:30 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,5 +66,13 @@ void			*ft_calloc(size_t nelem, size_t elsize);
 The substring begins at index ’start’ and is of maximum size ’len’ */
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strjoin(char const *s1, char const *s2);
+// char			*ft_strtrim(char const *s1, char const *set);
+char			**ft_split(char const *s, char c);
+/*Returns the point in the string where char c is not equal*/
+char			*ft_ischar(char *s, char c);
+/*Returns integer with amount char c in the string*/
+int				ft_strchrlen(char *s, char c);
+/*Returns integer with length string between char c in the string*/
+unsigned int	ft_bsizechr(char *s, char c);
 
 #endif //LIBFT_H
