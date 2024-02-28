@@ -30,7 +30,7 @@ static int	ft_strchrlen(char *s, char c)
 	if (s == NULL)
 		return (0);
 	if (*s == '\0')
-		i = 0;
+		return (0);
 	while (*s)
 	{
 		if (*s == c)
@@ -83,27 +83,23 @@ char	**ft_split(char const *s, char c)
 	char	**tab;
 	char	*ptr_s;
 	int		tab_size;
-	int		size;
 	int		i;
 
 	ptr_s = (char *) s;
 	tab_size = ft_strchrlen(ptr_s, c);
 	tab = (char **) malloc((tab_size + 1) * sizeof(char *));
 	i = 0;
-	if (tab == NULL)
-		return (NULL);
-	while (tab_size-- > 0)
+	if (tab)
 	{
-		ptr_s = ft_ischar(ptr_s, c);
-		size = ft_strlenbetweensep(ptr_s, c);
-		tab[i] = ft_strndup(ptr_s, size);
-		// tab[i] = (char *) malloc(size * sizeof(char) + 1);
-		// if (tab[i] == NULL)
-		// 	break ;
-		// ft_strlcpy(tab[i], ptr_s, size + 1);
-		i++;
-		ptr_s = ptr_s + size;
+		while (tab_size-- > 0)
+		{
+			ptr_s = ft_ischar(ptr_s, c);
+			tab[i] = ft_strndup(ptr_s, ft_strlenbetweensep(ptr_s, c));
+			ptr_s = ptr_s + ft_strlen(tab[i]);
+			i++;
+		}
+		tab[i] = 0;
+		return (tab);
 	}
-	tab[i] = NULL;
-	return (tab);
+	return (NULL);
 }

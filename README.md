@@ -10,7 +10,7 @@
 | ft_strlen | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_memset | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_bzero | ✅ | ✅ | ✅ | ✅ | ⛔️ |
-| ft_memcpy ✅ | ✅ | ✅ | ✅ | ⛔️ |
+| ft_memcpy | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_memmove | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_strlcpy | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_strlcat | ✅ | ✅ | ✅ | ✅ | ⛔️ |
@@ -32,7 +32,7 @@
 | ft_substr | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_strjoin | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_strtrim | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
-| ft_split | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
+| ft_split | ✅ | ✅ | ⛔️ | ⛔️ | ⛔️ |
 | ft_itoa | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | ft_strmapi | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | ft_striteri | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
