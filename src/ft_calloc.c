@@ -6,7 +6,7 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 20:48:45 by josejunior        #+#    #+#             */
-/*   Updated: 2024/02/22 23:06:13 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/02/28 21:08:40 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	*ft_calloc(size_t nelem, size_t elsize)
 	elem = (void *) malloc(nelem * elsize);
 	if (elem != NULL)
 	{
-		ft_memset(elem, 0, (unsigned int) nelem);
+		ft_memset(elem, 0, nelem);
 		return (elem);
 	}
 	return (NULL);

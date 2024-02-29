@@ -23,7 +23,7 @@
 | ft_memcmp | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_strnstr | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_atoi | ✅ | ✅ | ✅ | ✅ | ⛔️ |
-| ft_calloc | ✅ | ✅ | ⛔️ | ⛔️ | ⛔️ |
+| ft_calloc | ✅ | ✅ | ⛔️ | ✅ | ⛔️ |
 | ft_strdup | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 
 ## Libft Part 2 Status
@@ -32,8 +32,8 @@
 | ft_substr | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_strjoin | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_strtrim | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
-| ft_split | ✅ | ✅ | ⛔️ | ⛔️ | ⛔️ |
-| ft_itoa | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
+| ft_split | ✅ | ✅ | ⛔️ | ✅ | ⛔️ |
+| ft_itoa | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_strmapi | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | ft_striteri | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | ft_putchar_fd | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |

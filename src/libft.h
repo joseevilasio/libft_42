@@ -6,7 +6,7 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 20:05:10 by josejunior        #+#    #+#             */
-/*   Updated: 2024/02/27 19:29:30 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/02/29 18:58:05 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int				ft_isprint(int c);
  -- Return:
 integer with length string .*/
 int				ft_strlen(char *str);
-void			*ft_memset(void *ptr, int c, unsigned int n);
+void			*ft_memset(void *ptr, int c, size_t n);
 void			ft_bzero(void *ptr, unsigned int n);
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size);
@@ -68,11 +68,6 @@ char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strjoin(char const *s1, char const *s2);
 // char			*ft_strtrim(char const *s1, char const *set);
 char			**ft_split(char const *s, char c);
-/*Returns the point in the string where char c is not equal*/
-char			*ft_ischar(char *s, char c);
-/*Returns integer with amount char c in the string*/
-int				ft_strchrlen(char *s, char c);
-/*Returns integer with length string between char c in the string*/
-unsigned int	ft_bsizechr(char *s, char c);
+char			*ft_itoa(int n);
 
 #endif //LIBFT_H
