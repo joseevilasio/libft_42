@@ -6,7 +6,7 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 20:05:10 by josejunior        #+#    #+#             */
-/*   Updated: 2024/03/01 20:14:07 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/03/01 20:26:08 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ char			*ft_strjoin(char const *s1, char const *s2);
 
 /* Allocates (with malloc(3)) and returns a copy of ’s1’ with the characters
 specified in ’set’ removed from the beginning and the end of the string. */
-// char			*ft_strtrim(char const *s1, char const *set);
+char			*ft_strtrim(char const *s1, char const *set);
 
 /* Allocates (with malloc(3)) and returns an array of strings obtained by 
 splitting ’s’ using the character ’c’ as a delimiter. The array must end with
