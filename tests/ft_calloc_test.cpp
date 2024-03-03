@@ -12,5 +12,3 @@ TEST(calloc, Test_1) {
  	free(d1);
  	free(d2);
 }
-
- 

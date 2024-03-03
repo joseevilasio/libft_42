@@ -23,7 +23,7 @@
 | ft_memcmp | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_strnstr | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_atoi | ✅ | ✅ | ✅ | ✅ | ⛔️ |
-| ft_calloc | ✅ | ✅ | ⛔️ | ✅ | ⛔️ |
+| ft_calloc | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_strdup | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 
 ## Libft Part 2 Status
