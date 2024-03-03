@@ -44,7 +44,7 @@
 ## Libft Bonus Status
 | Function | Status | Norminette | Francinette | My own test - Gtest | Moulinette
 | --- | --- | --- | --- |--- | --- |
-| ft_lstnew | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
+| ft_lstnew | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_lstadd_front | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | ft_lstsize | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | ft_lstlast | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |

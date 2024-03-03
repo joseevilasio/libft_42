@@ -6,7 +6,7 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 20:05:10 by josejunior        #+#    #+#             */
-/*   Updated: 2024/03/01 20:26:08 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/03/03 12:36:43 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,12 @@
 # define LIBFT_H
 # include <unistd.h>
 # include <stdlib.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 /*Checks c is an alphabetic character.
  -- Return:
@@ -105,5 +111,10 @@ void			ft_putendl_fd(char *s, int fd);
 
 /* Outputs the integer ’n’ to the given file descriptor. */
 void			ft_putnbr_fd(int n, int fd);
+
+/* Allocates (with malloc(3)) and returns a new node. The member variable 
+’content’ is initialized with the value of the parameter ’content’. The
+variable ’next’ is initialized to NULL. */
+t_list			*ft_lstnew(void *content);
 
 #endif //LIBFT_H
