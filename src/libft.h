@@ -6,7 +6,7 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 20:05:10 by josejunior        #+#    #+#             */
-/*   Updated: 2024/03/03 12:36:43 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/03/05 20:22:45 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,5 +116,11 @@ void			ft_putnbr_fd(int n, int fd);
 ’content’ is initialized with the value of the parameter ’content’. The
 variable ’next’ is initialized to NULL. */
 t_list			*ft_lstnew(void *content);
+
+/* Adds the node ’new’ at the beginning of the list.  */
+void			ft_lstadd_front(t_list **lst, t_list *new);
+
+/* Counts the number of nodes in a list. */
+int				ft_lstsize(t_list *lst);
 
 #endif //LIBFT_H
