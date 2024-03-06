@@ -6,7 +6,7 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 20:05:10 by josejunior        #+#    #+#             */
-/*   Updated: 2024/03/05 20:22:45 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/03/06 16:27:25 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,6 +112,7 @@ void			ft_putendl_fd(char *s, int fd);
 /* Outputs the integer ’n’ to the given file descriptor. */
 void			ft_putnbr_fd(int n, int fd);
 
+/* BONUS PART */
 /* Allocates (with malloc(3)) and returns a new node. The member variable 
 ’content’ is initialized with the value of the parameter ’content’. The
 variable ’next’ is initialized to NULL. */
@@ -122,5 +123,16 @@ void			ft_lstadd_front(t_list **lst, t_list *new);
 
 /* Counts the number of nodes in a list. */
 int				ft_lstsize(t_list *lst);
+
+/* Returns the last node of the list. */
+t_list			*ft_lstlast(t_list *lst);
+
+/* Adds the node ’new’ at the end of the list. */
+void			ft_lstadd_back(t_list **lst, t_list *new);
+
+/* Takes as a parameter a node and frees the memory of the node’s content using
+the function ’del’ given as a parameter and free the node. The memory of ’next’
+must not be freed. */
+void			ft_lstdelone(t_list *lst, void (*del)(void *));
 
 #endif //LIBFT_H
