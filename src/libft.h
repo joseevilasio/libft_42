@@ -6,7 +6,7 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 20:05:10 by josejunior        #+#    #+#             */
-/*   Updated: 2024/03/06 16:27:25 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/03/07 17:17:45 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -134,5 +134,20 @@ void			ft_lstadd_back(t_list **lst, t_list *new);
 the function ’del’ given as a parameter and free the node. The memory of ’next’
 must not be freed. */
 void			ft_lstdelone(t_list *lst, void (*del)(void *));
+
+/* Deletes and frees the given node and every successor of that node, using the
+function ’del’ and free(3). Finally, the pointer to the list must be set to
+NULL. */
+void			ft_lstclear(t_list **lst, void (*del)(void *));
+
+/* Iterates the list ’lst’ and applies the function
+’f’ on the content of each node. */
+void			ft_lstiter(t_list *lst, void (*f)(void *));
+
+/* Iterates the list ’lst’ and applies the function ’f’ on the content of each
+node. Creates a new list resulting of the successive applications of the
+function ’f’. The ’del’ function is used to delete the content of a node if
+needed. */
+t_list			*ft_lstmap(t_list *lst, void *(*f)(void *), void(*del)(void *));
 
 #endif //LIBFT_H
