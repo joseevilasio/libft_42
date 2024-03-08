@@ -1,3 +1,21 @@
+# Libft
+My very first library in C. Project is part of the course of 42 school.
+The library was designed to have functions similar to standard C libraries that aim to manipulate strings, handle structs, pointers, and memory allocation.
+
+## Compile
+To compile the library, simply use the makefile targets on the command line within the 'src' folder.
+```
+./src/make libft.a
+```
+
+## Tests
+My tests were conducted using GTest. The prerequisites are to have CMake installed on your machine and to have already compiled the library.
+```
+./cmake -S . -B build && cmake --build build && ./build/all_tests
+```
+In addition to my own tests, tests were conducted using the [Francinette](https://github.com/xicodomingues/francinette) tool for the library.
+
+🚩 *So far it has not been tested by Moulinette*.
 
 ## Libft Part 1 Status
 | Function | Status | Norminette | Francinette | My own test - Gtest | Moulinette
