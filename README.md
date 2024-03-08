@@ -50,6 +50,6 @@
 | ft_lstlast | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_lstadd_back | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_lstdelone | ✅ | ✅ | ✅ | ✅ | ⛔️ |
-| ft_lstclear | ✅ | ✅ | ⛔️ | ⛔️ | ⛔️ |
+| ft_lstclear | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_lstiter | ✅ | ✅ | ✅ | ✅ | ⛔️ |
-| ft_lstmap | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
+| ft_lstmap | ✅ | ✅ | ✅ | ✅ | ⛔️ |
