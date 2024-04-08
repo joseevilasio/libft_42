@@ -2,6 +2,8 @@
 My very first library in C. Project is part of the course of 42 school.
 The library was designed to have functions similar to standard C libraries that aim to manipulate strings, handle structs, pointers, and memory allocation.
 
+🚩 *Subject version 16*.
+
 ## Compile
 To compile the library, simply use the makefile targets on the command line within the 'src' folder.
 ```
