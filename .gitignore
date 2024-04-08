@@ -57,3 +57,5 @@ dkms.conf
 
 #Ide
 .vscode
+main
+main.c
