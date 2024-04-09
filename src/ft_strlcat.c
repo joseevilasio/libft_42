@@ -6,15 +6,17 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 19:37:29 by josejunior        #+#    #+#             */
-/*   Updated: 2024/02/15 19:39:06 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/04/09 21:29:05 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+#include "libft.h"
+
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	unsigned int	index_src;
-	unsigned int	index_dest;
-	unsigned int	i;
+	size_t	index_src;
+	size_t	index_dest;
+	size_t	i;
 
 	index_src = 0;
 	index_dest = 0;

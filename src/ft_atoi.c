@@ -6,11 +6,11 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/16 19:10:03 by josejunior        #+#    #+#             */
-/*   Updated: 2024/02/16 19:25:15 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/04/08 13:36:03 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	sign;

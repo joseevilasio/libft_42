@@ -1,4 +1,4 @@
-.PHONY: all $(NAME) clean fclean re
+.PHONY: all $(NAME) clean fclean re bonus
 
 NAME := libft.a
 

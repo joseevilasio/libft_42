@@ -6,12 +6,11 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/29 18:46:39 by josejunior        #+#    #+#             */
-/*   Updated: 2024/02/29 21:27:30 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/04/08 21:17:47 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static unsigned int	ft_digitlen(int n)
 {

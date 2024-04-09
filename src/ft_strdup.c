@@ -6,13 +6,13 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/16 19:29:47 by josejunior        #+#    #+#             */
-/*   Updated: 2024/02/16 19:33:50 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/04/08 21:21:42 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(char *src)
+char	*ft_strdup(const char *src)
 {
 	char	*str;
 	int		i;

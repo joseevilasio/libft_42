@@ -6,13 +6,15 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 19:13:49 by josejunior        #+#    #+#             */
-/*   Updated: 2024/02/15 19:13:50 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/04/09 21:28:08 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+#include "libft.h"
+
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
 	if (size > 0 && dest != (void *)0)

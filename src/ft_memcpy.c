@@ -6,11 +6,13 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/18 13:23:43 by josejunior        #+#    #+#             */
-/*   Updated: 2024/02/19 19:19:49 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/04/09 21:20:22 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memcpy(void *dest, const void *src, unsigned int n)
+#include "libft.h"
+
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	const unsigned char	*ptr_src;
 	unsigned char		*ptr_dest;

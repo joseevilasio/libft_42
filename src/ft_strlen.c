@@ -6,11 +6,11 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 20:22:05 by joneves-          #+#    #+#             */
-/*   Updated: 2024/02/14 18:49:29 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/04/08 13:33:48 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+int	ft_strlen(const char *str)
 {
 	int	i;
 

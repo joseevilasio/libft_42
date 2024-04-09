@@ -6,17 +6,17 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/16 19:43:47 by josejunior        #+#    #+#             */
-/*   Updated: 2024/02/16 21:29:32 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/04/08 21:26:44 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(char *str, char *to_find, unsigned int len)
+char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 {
-	int				index;
-	unsigned int	i;
-	unsigned int	x;
+	int		index;
+	size_t	i;
+	size_t	x;
 
 	i = 0;
 	if (*to_find == '\0')
