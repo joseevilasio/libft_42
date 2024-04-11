@@ -6,7 +6,7 @@
 /*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 20:05:10 by josejunior        #+#    #+#             */
-/*   Updated: 2024/04/09 21:42:07 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/04/11 22:40:07 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -166,7 +166,7 @@ t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 
 /* Counts the number of nodes in a list. */
-int				ft_lstsize(t_list *lst);
+int		ft_lstsize(t_list *lst);
 
 /* Returns the last node of the list. */
 t_list	*ft_lstlast(t_list *lst);
