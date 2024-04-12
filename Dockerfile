@@ -1,15 +1,15 @@
+FROM ubuntu:latest
 
-FROM ubuntu as ubuntu-build-base
+RUN apt update && \
+    apt install -y apt-utils \
+                   build-essential \
+                   cmake \
+                   cmake-curses-gui \
+                   python3
 
 ENV PATH /libft_42
 
 WORKDIR $PATH
-
-RUN apt update -y; \
-    apt upgrade -y; \
-    apt install -y build-essential libboost-all-dev python3; \
-	apt-get -y install cmake-curses-gui \
-    apt clean -y
 
 COPY src/ $PATH/src
 
@@ -19,4 +19,6 @@ COPY CMakeLists.txt $PATH
 
 COPY Makefile $PATH
 
-CMD [ "make libft" ]
+COPY install.sh $PATH
+
+CMD ["/bin/bash"]
