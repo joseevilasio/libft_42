@@ -1,17 +1,35 @@
-.PHONY: build run tester libft
+.PHONY: build run start tester compile compile_bonus update_files 
+
+IMAGEM := ducktester
+CONTAINER := duckbill
 
 build:
-	@docker build -t ducktester .
+	@docker build -t $(IMAGEM) .
 
 run:
-	@docker run -it ducktester
+	@docker rm $(CONTAINER)
+	@docker run --name $(CONTAINER) -it $(IMAGEM)
+
+start:
+	@docker start $(CONTAINER)
+	@docker attach $(CONTAINER)
 
 tester:
 	@cmake -S . -B build
 	@cmake --build build
 	@./build/all_tests
 
-libft:
-	$(MAKE) -C /src/Makefile fclean
-	$(MAKE) -C /src/Makefile libft.a
+compile:
+	$(MAKE) -C /src/Makefile all
 	$(MAKE) -C /src/Makefile clean
+
+compile_bonus:
+	$(MAKE) -C /src/Makefile bonus
+	$(MAKE) -C /src/Makefile clean
+
+run_francinette:
+	@cd /src
+	@francinette
+
+update_files:
+	@docker cp ./src $(CONTAINER):/workspace

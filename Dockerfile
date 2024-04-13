@@ -2,23 +2,30 @@ FROM ubuntu:latest
 
 RUN apt update && \
     apt install -y apt-utils \
+                   coreutils \
+                   util-linux \
+                   bash \
+                   git \
+                   clang \
                    build-essential \
                    cmake \
                    cmake-curses-gui \
-                   python3
+                   python3 \
+                   python3-pip \
+                   python3.10-venv
 
-ENV PATH /libft_42
+WORKDIR /workspace
 
-WORKDIR $PATH
+COPY src/ /workspace/src
 
-COPY src/ $PATH/src
+COPY tests/ /workspace/tests
 
-COPY tests/ $PATH/tests
+COPY CMakeLists.txt /workspace
 
-COPY CMakeLists.txt $PATH
+COPY Makefile /workspace
 
-COPY Makefile $PATH
+COPY install.sh /workspace
 
-COPY install.sh $PATH
+RUN ./install.sh
 
 CMD ["/bin/bash"]
