@@ -1,4 +1,4 @@
-.PHONY: build run start tester compile compile_bonus update_files 
+.PHONY: build run start tester compile compile_bonus update_files run_francinette
 
 IMAGEM := ducktester
 CONTAINER := duckbill
@@ -7,7 +7,6 @@ build:
 	@docker build -t $(IMAGEM) .
 
 run:
-	@docker rm $(CONTAINER)
 	@docker run --name $(CONTAINER) -it $(IMAGEM)
 
 start:
