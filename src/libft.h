@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
+/*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 20:05:10 by josejunior        #+#    #+#             */
-/*   Updated: 2024/04/11 22:40:07 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/04/15 17:34:04 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,11 +106,25 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
 /* The function copies n bytes from memory area src to memory area dest. */
 void	*ft_memmove(void *dest, const void *src, unsigned int n);
 
-/*  */
+/* The function returns a pointer to the first occurrence
+of the character c in the string s. */
 char	*ft_strchr(char *s, int c);
+
+/* The function returns a pointer to the last occurrence
+of the character c in the string s. */
 char	*ft_strrchr(char *s, int c);
+
+/* The function scans the initial n bytes of the memory area pointed to by
+s for the first instance of c.  Both c and the bytes of the memory area 
+pointed to by s are interpreted as unsigned char. */
 void	*ft_memchr(const void *s, int c, size_t n);
+
+/* The function compares the first n bytes (each interpreted as unsigned 
+char) of the memory areas s1 and s2. */
 int		ft_memcmp(const void *s1, const void *s2, unsigned int n);
+
+/* The function shall allocate unused space for an array of nelem elements
+each of whose size in bytes is elsize. */
 void	*ft_calloc(size_t nelem, size_t elsize);
 
 /* Allocates (with malloc(3)) and returns a substring from the string ’s’.
@@ -156,14 +170,14 @@ void	ft_putendl_fd(char *s, int fd);
 /* Outputs the integer ’n’ to the given file descriptor. */
 void	ft_putnbr_fd(int n, int fd);
 
-/* BONUS PART */
+/* - - - - - B O N U S  P A R T - - - - - */
 /* Allocates (with malloc(3)) and returns a new node. The member variable 
 ’content’ is initialized with the value of the parameter ’content’. The
 variable ’next’ is initialized to NULL. */
 t_list	*ft_lstnew(void *content);
 
 /* Adds the node ’new’ at the beginning of the list.  */
-void	ft_lstadd_front(t_list **lst, t_list *new);
+void	ft_lstadd_front(t_list **lst, t_list *new_);
 
 /* Counts the number of nodes in a list. */
 int		ft_lstsize(t_list *lst);
@@ -172,7 +186,7 @@ int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
 
 /* Adds the node ’new’ at the end of the list. */
-void	ft_lstadd_back(t_list **lst, t_list *new);
+void	ft_lstadd_back(t_list **lst, t_list *new_);
 
 /* Takes as a parameter a node and frees the memory of the node’s content using
 the function ’del’ given as a parameter and free the node. The memory of ’next’
