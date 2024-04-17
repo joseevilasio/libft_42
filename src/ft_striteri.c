@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
+/*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/01 13:27:13 by josejunior        #+#    #+#             */
-/*   Updated: 2024/03/01 17:37:28 by josejunior       ###   ########.fr       */
+/*   Created: 2024/04/16 19:04:19 by joneves-          #+#    #+#             */
+/*   Updated: 2024/04/16 19:04:21 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

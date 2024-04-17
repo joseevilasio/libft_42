@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
+/*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/18 13:23:43 by josejunior        #+#    #+#             */
-/*   Updated: 2024/02/19 19:37:11 by josejunior       ###   ########.fr       */
+/*   Created: 2024/04/16 19:03:23 by joneves-          #+#    #+#             */
+/*   Updated: 2024/04/16 19:03:25 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

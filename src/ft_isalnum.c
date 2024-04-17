@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
+/*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/13 20:41:23 by josejunior        #+#    #+#             */
-/*   Updated: 2024/02/13 20:53:03 by josejunior       ###   ########.fr       */
+/*   Created: 2024/04/16 19:01:13 by joneves-          #+#    #+#             */
+/*   Updated: 2024/04/16 19:01:15 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
+/*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/06 19:18:46 by josejunior        #+#    #+#             */
-/*   Updated: 2024/03/06 19:26:56 by josejunior       ###   ########.fr       */
+/*   Created: 2024/04/16 19:02:30 by joneves-          #+#    #+#             */
+/*   Updated: 2024/04/16 19:02:32 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

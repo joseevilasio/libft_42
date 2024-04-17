@@ -1,5 +1,6 @@
 #include <gtest/gtest.h>
 #include <stdlib.h>
+#include <limits.h>
 
 extern "C" {
 	#include "../src/libft.h"

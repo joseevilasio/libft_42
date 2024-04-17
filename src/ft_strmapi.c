@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
+/*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/01 10:14:08 by josejunior        #+#    #+#             */
-/*   Updated: 2024/03/01 11:06:04 by josejunior       ###   ########.fr       */
+/*   Created: 2024/04/16 19:04:43 by joneves-          #+#    #+#             */
+/*   Updated: 2024/04/16 19:04:45 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

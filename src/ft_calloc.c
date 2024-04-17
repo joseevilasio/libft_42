@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
+/*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/20 20:48:45 by josejunior        #+#    #+#             */
-/*   Updated: 2024/03/03 11:49:11 by josejunior       ###   ########.fr       */
+/*   Created: 2024/04/16 19:01:01 by joneves-          #+#    #+#             */
+/*   Updated: 2024/04/16 19:01:04 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

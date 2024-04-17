@@ -1,31 +1,31 @@
 .PHONY: all $(NAME) clean fclean re bonus
 
 NAME := libft.a
+SOURCE := $(wildcard *.c)
+SOURCE := $(filter-out %ft_lst%.c, $(SOURCE))
+BONUS_SOURCE :=  $(filter %ft_lst%.c, $(SOURCE))
+OBJECTS := $(SOURCE:.c=.o)
+BONUS_OBJECTS := $(BONUS_SOURCE:.c=.o)
+FLAGS := cc -Wall -Wextra -Werror -g -std=c99
 
 all:	$(NAME)
 
-obj_files.o:
-	@for file_source in ./*.c; do \
-		file_obj="./$$(basename $${file_source%.c}).o"; \
-		cc -Wall -Wextra -Werror -g -c "$${file_source}" -o "$${file_obj}"; \
-	done
+%.o: %.c
+	$(FLAGS) -c $< -o $@
 
-$(NAME):	obj_files.o
-	@ar rcs ./libft.a ./*.o
+$(BONUS_OBJECTS):	$(BONUS_SOURCE)
+	$(FLAGS) -c $< -o $@
 
-bonus:
-	@for file_source in ./ft_lst*.c; do \
-		file_obj="./$$(basename $${file_source%.c}).o"; \
-		cc -Wall -Wextra -Werror -g -c "$${file_source}" -o "$${file_obj}"; \
-	done
-	@ar rcs ./libft.a ./*.o
+$(NAME):	$(OBJECTS)
+	@ar rcs $(NAME) *.o
+
+bonus:	$(BONUS_OBJECTS)
+	ar rcs $(NAME) $^
 
 clean:
-	@find ./ -name '*.o' -exec rm -f {} \;
+	@rm -f *.o
 
 fclean:	clean
-	@find ./ -name '*.out' -exec rm -f {} \;
-	@find ./ -name '*.a' -exec rm -f {} \;
-	@find ./ -name '$(NAME)' -exec rm -f {} \;	
+	@rm -f $(NAME)
 
 re:	fclean all

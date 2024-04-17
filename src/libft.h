@@ -6,7 +6,7 @@
 /*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 20:05:10 by josejunior        #+#    #+#             */
-/*   Updated: 2024/04/15 17:34:04 by joneves-         ###   ########.fr       */
+/*   Updated: 2024/04/17 15:05:11 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -171,6 +171,7 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 /* - - - - - B O N U S  P A R T - - - - - */
+
 /* Allocates (with malloc(3)) and returns a new node. The member variable 
 ’content’ is initialized with the value of the parameter ’content’. The
 variable ’next’ is initialized to NULL. */

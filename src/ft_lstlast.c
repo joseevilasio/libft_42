@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
+/*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/05 21:48:22 by josejunior        #+#    #+#             */
-/*   Updated: 2024/03/06 15:28:58 by josejunior       ###   ########.fr       */
+/*   Created: 2024/04/16 19:02:35 by joneves-          #+#    #+#             */
+/*   Updated: 2024/04/16 19:02:43 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

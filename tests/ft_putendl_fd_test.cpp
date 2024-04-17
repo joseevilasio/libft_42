@@ -5,48 +5,47 @@
 #include <sys/stat.h>
 #include <string.h>
 
+
 extern "C" {
 	#include "../src/libft.h"
 }
 
-TEST(putchar_fd, char_1) {
-
+TEST(putendl_fd, str_1) {
 	int fd = open("./tests/temp", O_RDWR | O_CREAT, S_IRUSR | S_IWUSR);
-	char *content = (char *) malloc(1 * sizeof(char) + 1);
-	char *str = strdup("a");
+	char *content = (char *) malloc(100 * sizeof(char) + 1);
+	char *str = strdup("123456789\n");
+	char *test = strdup("123456789");
 
-    ft_putchar_fd('a', fd);
+    ft_putendl_fd(test, fd);
 	ft_putchar_fd('\0', fd);
 
 	close(fd);
-
 	int fdd = open("./tests/temp", O_RDWR | O_CREAT, S_IRUSR | S_IWUSR);
-	read(fdd, content, 2);
+	read(fdd, content, 100);
 	ASSERT_EQ(strcmp(content, str), 0);
     close(fdd);
     remove("/tests/temp");
 	free(content);
 	free(str);
+	free(test);
 }
 
-TEST(putchar_fd, char_2) {
+TEST(putendl_fd, str_2) {
 	int fd = open("./tests/temp", O_RDWR | O_CREAT, S_IRUSR | S_IWUSR);
-	char *content = (char *) malloc(4 * sizeof(char) + 1);
-	char *str = strdup("a1z\n");
+	char *content = (char *) malloc(100 * sizeof(char) + 1);
+	char *str = strdup("Hello World!\n");
+	char *test = strdup("Hello World!");
 
-    ft_putchar_fd('a', fd);
-	ft_putchar_fd('1', fd);
-	ft_putchar_fd('z', fd);
-	ft_putchar_fd('\n', fd);
+    ft_putendl_fd(test, fd);
 	ft_putchar_fd('\0', fd);
-	
-	close(fd);
 
+	close(fd);
 	int fdd = open("./tests/temp", O_RDWR | O_CREAT, S_IRUSR | S_IWUSR);
-	read(fdd, content, 5);
+	read(fdd, content, 100);
 	ASSERT_EQ(strcmp(content, str), 0);
     close(fdd);
     remove("/tests/temp");
 	free(content);
 	free(str);
+	free(test);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
+/*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/20 19:53:54 by josejunior        #+#    #+#             */
-/*   Updated: 2024/02/20 20:11:37 by josejunior       ###   ########.fr       */
+/*   Created: 2024/04/16 19:03:14 by joneves-          #+#    #+#             */
+/*   Updated: 2024/04/16 19:03:16 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
