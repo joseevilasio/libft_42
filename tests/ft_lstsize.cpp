@@ -5,13 +5,15 @@ extern "C" {
 }
 
 TEST(lstsize, str_1) {
-    t_list *duck;
-    t_list *cat;
-    t_list *dog;
-    t_list *home;
+    t_list *duck = NULL;
+    t_list *cat = NULL;
+    t_list *dog = NULL;
+    t_list *home = NULL;
+
     char *str_duck = strdup("quack!");
     char *str_cat = strdup("miau!");
     char *str_dog = strdup("auau!");
+
     duck = ft_lstnew(str_duck);
     cat = ft_lstnew(str_cat);
     dog = ft_lstnew(str_dog);

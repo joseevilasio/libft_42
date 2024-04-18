@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 19:02:15 by joneves-          #+#    #+#             */
-/*   Updated: 2024/04/16 19:02:17 by joneves-         ###   ########.fr       */
+/*   Updated: 2024/04/17 22:38:10 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,5 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 		*lst = (*lst)->next;
 		free(temp);
 	}
+	lst = NULL;
 }
