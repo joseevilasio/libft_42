@@ -4,7 +4,7 @@ extern "C" {
 	#include "../src/libft.h"
 }
 
-static void	ft_encrypt_z(void *ptr)
+static void	*ft_encrypt(void *ptr)
 {
 	int i = 0;
 	char *content = (char *) ptr;
@@ -13,13 +13,15 @@ static void	ft_encrypt_z(void *ptr)
 	{
 		content[i++] = 'z';
 	}
+    return (ptr);
 }
 
-TEST(lstiter, str_1) {
+TEST(lstmap, str_1) {
     t_list *duck = NULL;
     t_list *cat = NULL;
     t_list *dog = NULL;
     t_list *garden = NULL;
+    t_list *room = NULL;
 
     char *str_duck = strdup("quack!");
     char *str_cat = strdup("miau!");
@@ -33,13 +35,13 @@ TEST(lstiter, str_1) {
     ft_lstadd_front(&garden, cat);
     ft_lstadd_front(&garden, duck);
 
-    ft_lstiter(garden, ft_encrypt_z);
+    room = ft_lstmap(garden, &ft_encrypt, &free);
 
-	ASSERT_STREQ((char *)garden->content, "zzzzzz");
-    garden = garden->next;
-    ASSERT_STREQ((char *)garden->content, "zzzzz");
-    garden = garden->next;
-    ASSERT_STREQ((char *)garden->content, "zzzzz");
+	ASSERT_STREQ((char *)room->content, "zzzzzz");
+    room = room->next;
+    ASSERT_STREQ((char *)room->content, "zzzzz");
+    room = room->next;
+    ASSERT_STREQ((char *)room->content, "zzzzz");
 
     free(str_cat);
     free(str_dog);

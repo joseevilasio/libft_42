@@ -5,35 +5,45 @@ extern "C"
 #include "../src/libft.h"
 }
 
-// TEST(strlcat, checkReturn)
-// {    
-//     char *dest;
-//     dest = (char *) malloc(12 * sizeof(char) + 1);
-//     dest = "Hello ";
-//     char src[8] = "World!";
-//     ASSERT_EQ(ft_strlcat(dest, src, 7), 13);
-//     // free(dest);
-// }
+TEST(strlcat, checkReturn)
+{    
+    char *dest = NULL;
+    dest = ft_strdup("a");
 
-// TEST(strlcat, checkConcatenate)
-// {
-//     char *dest;
-//     dest = NULL;
-//     dest = (char *) malloc(12 * sizeof(char) + 1);
-//     char src[13] = "Hello World!";
-//     int result = ft_strlcat(dest, src, 13);
-//     ASSERT_EQ(result, 13);
-//     ASSERT_STREQ(dest, src);
-//     free(dest);
-// }
+    char *src = NULL;
+    src = ft_strdup("World!");
 
-// TEST(strlcat, checkConcatenatLimited)
-// {
-//     char *dest;
-//     dest = (char *) malloc(6 * sizeof(char) + 1);
-//     dest = "Hello ";
-//     char src[13] = "Hello World!";
-//     ft_strlcat(dest, src, 7);
-//     ASSERT_STREQ(dest, "Hello "); 
-//     free(dest);  
-// }
+    ASSERT_EQ(ft_strlcat(dest, src, 1), 7);
+
+    free(dest);
+    free(src);
+}
+
+TEST(strlcat, checkConcatenate)
+{
+    char *dest = NULL;
+    dest = (char *) malloc(12 * sizeof(char) + 1);
+
+    char *src = NULL;
+    src = ft_strdup("Hello World!");
+    size_t result = ft_strlcat(dest, src, 12);
+    ASSERT_STREQ(dest, src);
+
+    free(dest);
+    free(src);
+}
+
+TEST(strlcat, checkConcatenatLimited)
+{
+    char *dest = NULL;
+    dest = ft_strdup("Hello ");
+
+    char *src = NULL;
+    src = ft_strdup("Hello World!");
+
+    ASSERT_EQ(ft_strlcat(dest, src, 6), 18);
+    ASSERT_STREQ(dest, "Hello ");
+
+    free(dest); 
+    free(src);
+}
