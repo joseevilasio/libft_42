@@ -6,7 +6,7 @@
 /*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 19:04:57 by joneves-          #+#    #+#             */
-/*   Updated: 2024/04/16 19:04:59 by joneves-         ###   ########.fr       */
+/*   Updated: 2024/04/19 17:26:30 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ char	*ft_strrchr(char *s, int c)
 		if (s[i] == c)
 			return (s + i);
 	}
-	return ((void *) 0);
+	return (NULL);
 }

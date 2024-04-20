@@ -6,9 +6,11 @@
 /*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 19:04:09 by joneves-          #+#    #+#             */
-/*   Updated: 2024/04/16 19:04:11 by joneves-         ###   ########.fr       */
+/*   Updated: 2024/04/19 17:18:27 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strchr(char *s, int c)
 {
@@ -21,5 +23,5 @@ char	*ft_strchr(char *s, int c)
 	}
 	if (*s == c)
 		return (s);
-	return ((void *) 0);
+	return (NULL);
 }
