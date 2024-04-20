@@ -16,22 +16,22 @@ SRCS := ft_atoi.c ft_itoa.c ft_putendl_fd.c ft_strlcat.c ft_substr.c \
 
 OBJS := $(SRCS:.c=.o)
 
-# SRCS_B := ft_lstnew.c ft_lstadd_back.c ft_lstsize.c ft_lstadd_front.c \
-# 	ft_lstclear.c ft_lstiter.c ft_lstdelone.c ft_lstlast.c ft_lstmap.c \
+SRCS_B := ft_lstnew.c ft_lstadd_back.c ft_lstsize.c ft_lstadd_front.c \
+	ft_lstclear.c ft_lstiter.c ft_lstdelone.c ft_lstlast.c ft_lstmap.c \
 
-# OBJS_B := $(SRCS_B:.c=.o)
+OBJS_B := $(SRCS_B:.c=.o)
 
 all:	$(NAME) bonus
 
 $(OBJS):	$(SRCS)
 
-# $(OBJS_B):	$(SRCS_B)
+$(OBJS_B):	$(SRCS_B)
 
 $(NAME): $(OBJS)
 	ar rcs ./$(NAME) ./*.o
 
-# bonus: $(OBJS_B)
-# 	ar rcs ./$(NAME) ./*.o
+bonus: $(OBJS_B)
+	ar rcs ./$(NAME) ./*.o
 
 clean:
 	rm -f ./*.o
