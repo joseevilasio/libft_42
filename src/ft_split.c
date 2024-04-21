@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 19:03:54 by joneves-          #+#    #+#             */
-/*   Updated: 2024/04/16 19:04:00 by joneves-         ###   ########.fr       */
+/*   Updated: 2024/04/21 20:23:31 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,15 @@ static char	*ft_ischar(char *s, char c)
 	return (s);
 }
 
-static int	ft_strchrlen(char *s, char c)
+static int	ft_countslices(char *s, char c)
 {
 	int	i;
 
 	i = 1;
-	s = ft_ischar(s, c);
-	if (s == NULL)
+	if (ft_strlen((char *)s) == 0 && !*s)
 		return (0);
-	if (*s == '\0')
+	s = ft_ischar(s, c);
+	if (s == NULL || *s == '\0')
 		return (0);
 	while (*s)
 	{
@@ -46,60 +46,60 @@ static int	ft_strchrlen(char *s, char c)
 	return (i);
 }
 
-static unsigned int	ft_strlenbetweensep(char *s, char c)
+static void	ft_free(char **slices, int i)
 {
-	unsigned int	size;
-	char			*support;
-
-	support = s;
-	s = ft_strchr(s, c);
-	if (s == NULL)
-		size = ft_strlen(support);
-	else
-		size = ft_strlen(support) - ft_strlen(s);
-	return (size);
+	while (i > 0)
+		free(slices[--i]);
+	free(slices);
 }
 
-static char	*ft_strndup(char *src, unsigned int size)
+static char	*ft_sliced(char *s, char c)
 {
-	char			*str;
-	unsigned int	i;
+	char			*sliced;
+	char			*swap;
+	unsigned int	size;
 
-	i = 0;
-	str = (char *) malloc(size * sizeof(char) + 1);
-	if (str == NULL)
-		return (0);
-	while (i < size)
+	s = ft_ischar((char *) s, c);
+	swap = (char *) s;
+	swap = ft_strchr((char *) s, c);
+	if (swap == NULL)
+		size = ft_strlen((char *) s);
+	else
+		size = ft_strlen((char *) s) - ft_strlen(swap);
+	sliced = (char *) malloc(size * sizeof(char) + 1);
+	if (sliced)
 	{
-		str[i] = src[i];
-		i++;
+		ft_strlcpy(sliced, (char *) s, size + 1);
+		return (sliced);
 	}
-	str[i] = '\0';
-	return (str);
+	free(sliced);
+	return (NULL);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	char	**tab;
-	char	*ptr_s;
-	int		tab_size;
+	char	**slices;
+	int		slices_size;
 	int		i;
 
-	ptr_s = (char *) s;
-	tab_size = ft_strchrlen(ptr_s, c);
-	tab = (char **) malloc((tab_size + 1) * sizeof(char *));
+	slices_size = ft_countslices((char *) s, c);
+	slices = (char **) malloc((slices_size + 1) * sizeof(char *));
 	i = 0;
-	if (tab)
+	if (slices)
 	{
-		while (tab_size-- > 0)
+		while (slices_size-- > 0 && *s)
 		{
-			ptr_s = ft_ischar(ptr_s, c);
-			tab[i] = ft_strndup(ptr_s, ft_strlenbetweensep(ptr_s, c));
-			ptr_s = ptr_s + ft_strlen(tab[i]);
+			slices[i] = ft_sliced((char *) s, c);
+			if (!slices[i])
+			{
+				ft_free(slices, i);
+				return (NULL);
+			}
+			s = ft_ischar((char *) s, c) + ft_strlen(slices[i]);
 			i++;
 		}
-		tab[i] = 0;
-		return (tab);
+		slices[i] = NULL;
+		return (slices);
 	}
 	return (NULL);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 19:01:01 by joneves-          #+#    #+#             */
-/*   Updated: 2024/04/16 19:01:04 by joneves-         ###   ########.fr       */
+/*   Updated: 2024/04/20 20:32:20 by josejunior       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,6 @@ void	*ft_calloc(size_t nelem, size_t elsize)
 {
 	void	*elem;
 
-	if (elsize == 0 || nelem == 0)
-	{
-		nelem = 1;
-		elsize = 1;
-	}
 	elem = (void *) malloc((nelem * elsize) * sizeof(unsigned char));
 	if (elem != NULL)
 	{
