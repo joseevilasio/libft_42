@@ -23,10 +23,10 @@ TEST(strlcat, checkConcatenate)
 {
     char *dest = NULL;
     dest = (char *) malloc(12 * sizeof(char) + 1);
-
+    ft_memset(dest, '\0', 13);
     char *src = NULL;
     src = ft_strdup("Hello World!");
-    size_t result = ft_strlcat(dest, src, 12);
+    size_t result = ft_strlcat(dest, src, 13);
     ASSERT_STREQ(dest, src);
 
     free(dest);
