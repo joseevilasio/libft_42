@@ -61,7 +61,7 @@ In addition to my own tests, tests were conducted using the [Francinette](https:
 | ft_substr | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_strjoin | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_strtrim | ✅ | ✅ | ✅ | ✅ | ⛔️ |
-| ft_split | ✅ | ✅ | ⛔️ | ✅ | ⛔️ |
+| ft_split | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_itoa | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_strmapi | ✅ | ✅ | ✅ | ✅ | ⛔️ |
 | ft_striteri | ✅ | ✅ | ✅ | ✅ | ⛔️ |
