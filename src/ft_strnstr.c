@@ -6,7 +6,7 @@
 /*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 19:04:53 by joneves-          #+#    #+#             */
-/*   Updated: 2024/04/19 17:25:35 by joneves-         ###   ########.fr       */
+/*   Updated: 2024/04/21 21:31:59 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 {
-	int		index;
-	size_t	i;
-	size_t	x;
+	unsigned int	index;
+	size_t			i;
+	size_t			x;
 
 	i = 0;
 	if (!*to_find)

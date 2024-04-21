@@ -24,7 +24,7 @@ TEST(putchar_fd, char_1) {
 	read(fdd, content, 2);
 	ASSERT_EQ(strcmp(content, str), 0);
     close(fdd);
-    remove("/tests/temp");
+    remove("./tests/temp");
 	free(content);
 	free(str);
 }
@@ -46,7 +46,7 @@ TEST(putchar_fd, char_2) {
 	read(fdd, content, 5);
 	ASSERT_EQ(strcmp(content, str), 0);
     close(fdd);
-    remove("/tests/temp");
+    remove("./tests/temp");
 	free(content);
 	free(str);
 }

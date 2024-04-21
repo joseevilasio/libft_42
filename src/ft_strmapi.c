@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/16 19:04:43 by joneves-          #+#    #+#             */
-/*   Updated: 2024/04/16 19:04:45 by joneves-         ###   ########.fr       */
+/*   Created: 2024/04/21 21:20:45 by joneves-          #+#    #+#             */
+/*   Updated: 2024/04/21 21:20:47 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	ptr_s = (char *) s;
 	i = 0;
 	str = (char *) malloc(ft_strlen(ptr_s) * sizeof(char) + 1);
-	if (str != NULL)
+	if (str)
 	{
 		while (ptr_s[i])
 		{

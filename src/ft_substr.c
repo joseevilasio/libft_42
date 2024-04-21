@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/16 19:05:07 by joneves-          #+#    #+#             */
-/*   Updated: 2024/04/17 18:26:14 by joneves-         ###   ########.fr       */
+/*   Created: 2024/04/21 21:20:03 by joneves-          #+#    #+#             */
+/*   Updated: 2024/04/21 21:20:08 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (len > size)
 		len = size;
 	str = (char *) malloc(len * sizeof(char) + 1);
-	if (str != NULL)
+	if (str)
 	{
 		ptrs = (char *) s + start;
 		ft_strlcpy(str, ptrs, len + 1);

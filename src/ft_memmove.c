@@ -6,7 +6,7 @@
 /*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 19:03:23 by joneves-          #+#    #+#             */
-/*   Updated: 2024/04/16 19:03:25 by joneves-         ###   ########.fr       */
+/*   Updated: 2024/04/21 21:21:18 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memmove(void *dest, const void *src, unsigned int n)
 	i = 0;
 	ptr_dest = (char *)dest;
 	ptr_src = (char *)src;
-	if (dest == (void *) 0 && src == (void *) 0 && n > 0)
+	if (!dest && !src && n > 0)
 		return (dest);
 	if (ptr_dest > ptr_src)
 	{

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
+/*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 19:04:09 by joneves-          #+#    #+#             */
-/*   Updated: 2024/04/20 20:45:55 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/04/21 21:21:07 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,16 @@
 
 char	*ft_strchr(char *s, int c)
 {
-	c = c % 256;
+	unsigned char	new_c;
+
+	new_c = (unsigned char) c;
 	while (*s)
 	{
-		if (*s == c)
+		if (*s == new_c)
 			return (s);
 		s++;
 	}
-	if (*s == c)
+	if (*s == new_c)
 		return (s);
 	return (NULL);
 }

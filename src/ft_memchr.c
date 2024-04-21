@@ -6,7 +6,7 @@
 /*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 19:03:09 by joneves-          #+#    #+#             */
-/*   Updated: 2024/04/16 19:03:11 by joneves-         ###   ########.fr       */
+/*   Updated: 2024/04/21 21:21:24 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	str = (unsigned char *) s;
 	char_s = (unsigned char) c;
-	c = c % 256;
 	if (n > 0)
 	{
 		while (n-- > 0)

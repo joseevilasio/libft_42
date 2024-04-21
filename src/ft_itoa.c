@@ -6,7 +6,7 @@
 /*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 19:01:52 by joneves-          #+#    #+#             */
-/*   Updated: 2024/04/16 19:01:55 by joneves-         ###   ########.fr       */
+/*   Updated: 2024/04/21 21:21:48 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char	*ft_itoa(int n)
 		return (ft_strdup("0"));
 	size = ft_digitlen(n);
 	str = (char *) malloc(size * sizeof(char) + 1);
-	if (str != NULL)
+	if (str)
 	{
 		if (n < 0)
 		{
