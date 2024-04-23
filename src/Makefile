@@ -4,7 +4,7 @@ NAME := libft.a
 
 CC := cc
 
-CFLAGS := -Wall -Wextra -Werror -g -std=c99
+CFLAGS := -Wall -Wextra -Werror -g
 
 SRCS := ft_atoi.c ft_itoa.c ft_putendl_fd.c ft_strlcat.c ft_substr.c \
 	ft_bzero.c ft_putnbr_fd.c ft_strlcpy.c ft_tolower.c ft_calloc.c \
@@ -19,9 +19,9 @@ OBJS := $(SRCS:.c=.o)
 SRCS_B := ft_lstnew.c ft_lstadd_back.c ft_lstsize.c ft_lstadd_front.c \
 	ft_lstclear.c ft_lstiter.c ft_lstdelone.c ft_lstlast.c ft_lstmap.c \
 
-OBJS_B := $(SRCS_B:.c=.o)
+OBJS_B := $(SRCS_B:.c=.o) $(OBJS)
 
-all:	$(NAME) bonus
+all:	$(NAME)
 
 $(OBJS):	$(SRCS)
 
@@ -31,7 +31,7 @@ $(NAME): $(OBJS)
 	ar rcs ./$(NAME) ./*.o
 
 bonus: $(OBJS_B)
-	ar rcs ./$(NAME) ./*.o
+	make OBJS="$(OBJS_B)" all
 
 clean:
 	rm -f ./*.o
@@ -40,3 +40,7 @@ fclean:	clean
 	rm -f ./$(NAME)
 
 re:	fclean all
+
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS_B)
+	gcc -nostartfiles -shared -o libft.so $(OBJS_B)

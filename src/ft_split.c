@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: josejunior <josejunior@student.42.fr>      +#+  +:+       +#+        */
+/*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 19:03:54 by joneves-          #+#    #+#             */
-/*   Updated: 2024/04/21 20:23:31 by josejunior       ###   ########.fr       */
+/*   Updated: 2024/04/23 12:46:11 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,16 @@ static char	*ft_ischar(char *s, char c)
 	return (s);
 }
 
-static int	ft_countslices(char *s, char c)
+static unsigned int	ft_countslices(char *s, char c)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 1;
+	if (s == NULL || *s == '\0')
+		return (0);
 	if (ft_strlen((char *)s) == 0 && !*s)
 		return (0);
 	s = ft_ischar(s, c);
-	if (s == NULL || *s == '\0')
-		return (0);
 	while (*s)
 	{
 		if (*s == c)

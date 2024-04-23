@@ -6,7 +6,7 @@
 /*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/21 21:22:19 by joneves-          #+#    #+#             */
-/*   Updated: 2024/04/21 21:22:22 by joneves-         ###   ########.fr       */
+/*   Updated: 2024/04/22 18:56:10 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ int		ft_isprint(int c);
 /*check the size string.
  -- Return:
 integer with length string .*/
-int		ft_strlen(const char *str);
+size_t	ft_strlen(const char *str);
 
 /* The function fills the first n bytes of the memory area pointed to by s 
 with the constant byte c.

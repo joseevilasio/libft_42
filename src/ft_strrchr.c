@@ -6,7 +6,7 @@
 /*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 19:04:57 by joneves-          #+#    #+#             */
-/*   Updated: 2024/04/21 21:19:28 by joneves-         ###   ########.fr       */
+/*   Updated: 2024/04/22 18:54:33 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(char *s, int c)
 {
-	int				i;
+	size_t			i;
 	unsigned char	new_c;
 
 	new_c = (unsigned char) c;

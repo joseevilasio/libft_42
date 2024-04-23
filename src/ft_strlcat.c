@@ -6,7 +6,7 @@
 /*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 19:04:28 by joneves-          #+#    #+#             */
-/*   Updated: 2024/04/19 15:55:45 by joneves-         ###   ########.fr       */
+/*   Updated: 2024/04/23 13:13:57 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	size_t	size_dest;
 	size_t	i;
 
+	if ((!dest || !src) && size == 0)
+		return (0);
 	size_src = ft_strlen(src);
 	size_dest = ft_strlen(dest);
 	i = 0;

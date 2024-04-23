@@ -6,7 +6,7 @@
 /*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 19:03:48 by joneves-          #+#    #+#             */
-/*   Updated: 2024/04/16 19:03:51 by joneves-         ###   ########.fr       */
+/*   Updated: 2024/04/23 12:51:58 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	while (*s)
+	while (s && *s)
 	{
 		ft_putchar_fd(*s, fd);
 		s++;
