@@ -6,7 +6,7 @@
 /*   By: joneves- <joneves-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/21 21:22:19 by joneves-          #+#    #+#             */
-/*   Updated: 2024/07/07 15:58:03 by joneves-         ###   ########.fr       */
+/*   Updated: 2024/07/07 16:05:34 by joneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,17 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdarg.h>
+# include <stdio.h>
 
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }	t_list;
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 10
+# endif
 
 /*Checks c is an alphabetic character.
  -- Return:
@@ -225,6 +230,11 @@ int		ft_checklen(char *str, char fmt);
 function that will mimic the original printf() */
 int		ft_printf(const char *format, ...);
 
-/* --------------           --------------*/
+/* -----------------------------------------------------*/
+
+/* Read line: correct behavior
+NULL: there is nothing else to read, or an error
+occurred */
+char	*get_next_line(int fd);
 
 #endif //LIBFT_H
