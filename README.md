@@ -80,3 +80,10 @@ In addition to my own tests, tests were conducted using the [Francinette](https:
 | ft_lstclear | ✅ | ✅ | ✅ | ✅ | ✅ |
 | ft_lstiter | ✅ | ✅ | ✅ | ✅ | ✅ |
 | ft_lstmap | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+## Libft Additional Status
+| Function | Status | Norminette | Francinette | My own test - Gtest | Moulinette
+| --- | --- | --- | --- |--- | --- |
+| ft_printf | ✅ | ✅ | ✅ | ✅ | ✅ |
+| ft_get_next_line | ✅ | ✅ | ✅ | ✅ | ✅ |
+
